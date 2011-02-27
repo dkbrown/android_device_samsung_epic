@@ -51,17 +51,19 @@ BOARD_USES_OVERLAY := true
 
 #FROYO CAMERA
 BOARD_USES_FROYO := true
+BOARD_USE_FROYO_LIBCAMERA := true
 
 #audio defines 
 BOARD_USES_GENERIC_AUDIO := false
-BOARD_USES_NEXUS_S_AUDIO := true
-ifeq ($(BOARD_USES_NEXUS_S_AUDIO),false)
 BOARD_USES_ALSA_AUDIO := true
 BUILD_WITH_ALSA_UTILS := true
 ALSA_DEFAULT_SAMPLE_RATE := 44100
-endif
 
 USE_CAMERA_STUB := false
+USE_CAMERA_STUB := false
+ifeq ($(USE_CAMERA_STUB),false)
+BOARD_CAMERA_LIBRARIES := libcamera
+endif
 #USE_OVERLAY_FORMAT_YCbCr_420_SP := TRUE
 #BUILD_PV_VIDEO_ENCODERS := 1
 # opensource camera from samsung nexus s doesn't compile

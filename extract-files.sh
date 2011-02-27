@@ -43,14 +43,11 @@ etc/wifi/wpa_supplicant.conf
 bin/BCM4329B1_002.002.023.0417.0430.hcd
 
 
-
-
-	
 firmware/CE147F00.bin
 firmware/CE147F01.bin
 firmware/CE147F02.bin
 firmware/CE147F03.bin
-	
+
 lib/egl/libEGL_POWERVR_SGX540_120.so
 lib/egl/libGLES_android.so
 lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
@@ -67,13 +64,13 @@ bin/pvrsrvinit
 lib/hw/copybit.s5pc110.so
 lib/hw/lights.s5pc110.so
 lib/hw/gralloc.s5pc110.so
-lib/hw/sensors.default.so 
+lib/hw/sensors.default.so
 
 lib/libarccamera.so
 lib/libcamerafirmwarejni.so
-lib/libcamera.so 
+lib/libcamera.so
 lib/libseccameraadaptor.so
-lib/libseccamera.so 
+lib/libseccamera.so
 lib/libs3cjpeg.so
 cameradata/datapattern_420sp.yuv
 cameradata/datapattern_front_420sp.yuv
@@ -111,7 +108,7 @@ lib/libswmadomxoc.so
 lib/libswmv7domxoc.so
 lib/libswmv8domxoc.so
 lib/libsAMRWB.so
-lib/libsAMRNB.so 
+lib/libsAMRNB.so
 
 
 lib/lib_tvoutengine.so
@@ -150,10 +147,10 @@ lib/libwimaxne.so
 lib/libwimaxwtm.so
 etc/wimax_boot.bin
 etc/wimaxfw.bin
-etc/wimaxloader.bin 	
+etc/wimaxloader.bin
 
 
-lib/libSwypeCore.so 
+lib/libSwypeCore.so
 app/Swype.apk
 
 lib/libdivxdrm.so
@@ -223,7 +220,7 @@ done
 PRODUCT_COPY_FILES += \\
     vendor/samsung/__DEVICE__/proprietary/lib/libcamera.so:obj/lib/libcamera.so \\
     vendor/samsung/__DEVICE__/proprietary/lib/libtvout.so:obj/lib/libtvout.so
-#	vendor/samsung/__DEVICE__/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \\ 
+#	vendor/samsung/__DEVICE__/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \\
 
 
 
@@ -240,7 +237,7 @@ PRODUCT_COPY_FILES += \\
     vendor/samsung/__DEVICE__/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \\
 	vendor/samsung/__DEVICE__/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \\
 
-	
+
 #
 # Firmware files
 #
@@ -251,7 +248,7 @@ PRODUCT_COPY_FILES += \\
     vendor/samsung/__DEVICE__/proprietary/firmware/CE147F03.bin:system/firmware/CE147F03.bin
 
 
-	
+
 #
 # Display (3D)
 #
@@ -275,9 +272,9 @@ PRODUCT_COPY_FILES += \\
     vendor/samsung/__DEVICE__/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so \\
     vendor/samsung/__DEVICE__/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \\
 	vendor/samsung/__DEVICE__/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so 
+    vendor/samsung/__DEVICE__/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
-	
+
 #
 # Camera
 #
@@ -349,7 +346,7 @@ PRODUCT_COPY_FILES += \\
     vendor/samsung/__DEVICE__/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so \\
     vendor/samsung/__DEVICE__/proprietary/lib/libtvout.so:system/lib/libtvout.so \\
     vendor/samsung/__DEVICE__/proprietary/bin/tvoutserver:system/bin/tvoutserver \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so 
+    vendor/samsung/__DEVICE__/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so
 
 #
 #swype
@@ -398,8 +395,8 @@ PRODUCT_COPY_FILES += \\
 	vendor/samsung/__DEVICE__/proprietary/lib/libwimaxwtm.so:system/lib/libwimaxwtm.so \\
 	vendor/samsung/__DEVICE__/proprietary/etc/wimax_boot.bin:system/etc/wimax_boot.bin \\
 	vendor/samsung/__DEVICE__/proprietary/etc/wimaxfw.bin:system/etc/wimaxfw.bin \\
-	vendor/samsung/__DEVICE__/proprietary/etc/wimaxloader.bin:system/etc/wimaxloader.bin 
-	
+	vendor/samsung/__DEVICE__/proprietary/etc/wimaxloader.bin:system/etc/wimaxloader.bin
+
 #
 # test binary blobs
 #
@@ -425,11 +422,11 @@ PRODUCT_COPY_FILES += \\
 PRODUCT_COPY_FILES += \\
 	vendor/samsung/__DEVICE__/proprietary/lib/libdivx_jni.so:system/lib/libdivx_jni.so \\
 	vendor/samsung/__DEVICE__/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so
-	
+
 #
 # Files for battery charging screen
 #
-	
+
 PRODUCT_COPY_FILES += \\
     vendor/samsung/__DEVICE__/proprietary/bin/playlpm:system/bin/playlpm \\
     vendor/samsung/__DEVICE__/proprietary/bin/charging_mode:system/bin/charging_mode \\
